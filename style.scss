@@ -1,0 +1,69 @@
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'SF Pro Display',sans-serif ;
+    background-color: #F7F8FA;
+
+}
+.login {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+
+    .login__container {
+        width: 22.75rem;
+        height:22.7rem;
+        border-radius: 10px;
+        font-weight: 200;
+        background-color: #FFFFFF;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        >h2 {
+            margin-top: 2rem;
+        }
+        >form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-left: 2rem;
+            
+        }
+    }
+    .email {
+        >label {
+            opacity: .7;
+        }
+        >input {
+            width: 80%;
+            padding: .8rem;
+            position: relative;
+            border:.5px solid #E3E6F1;
+            border-radius: 7px;
+
+        }
+    }
+    .password {
+        >label {
+            opacity: .7;
+        }
+        >input {
+            width: 80%;
+            padding: .8rem;
+            border:.5px solid #E3E6F1;
+            border-radius: 7px;
+        }
+    }
+}
